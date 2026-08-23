@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Victor | Desenvolvedor",
+  title: "Portfólio | Victor Gadelha - Desenvolvedor Full-Stack",
   description: "Portfólio de Victor, desenvolvedor full-stack. Explore meus projetos, habilidades e entre em contato para colaborações.", 
 };
 

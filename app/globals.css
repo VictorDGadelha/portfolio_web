@@ -26,3 +26,94 @@ section {
   min-height: 100vh;
   padding: 100px 8%;
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+  width: min(1200px, 90%);
+  height: 80px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  position: relative;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  color: #555;
+
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.header-button {
+  padding: 0.7rem 1.2rem;
+
+  border: 1px solid #111;
+  border-radius: 6px;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.header-button:hover {
+  background: #111;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    height: 70px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  main {
+    padding-top: 70px;
+  }
+}
